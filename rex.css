@@ -1,0 +1,222 @@
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+     /* Background color for the body */
+}
+
+/* Navigation bar styles */
+.navbar {
+    background-color:white;
+    overflow: hidden;
+    height: 20vh;
+}
+
+
+.navbar a {
+    float: right;
+    margin-top: 10px;
+    position: relative;
+    font-size: 20px;
+    font-style: bold;
+    display: block;
+    color: rgb(141, 136, 136);
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+
+}
+.navbar a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 4px;
+    background-color: rgb(241, 119, 32);
+    transition: width 0.4s;
+}
+.navbar a:hover::after {
+    background-color:rgb(241, 119, 32);
+    color:rgb(4,116,186);
+    width: 90%;
+}
+.navbar a[href="1"] {
+    background-color:rgb(4,116,186);
+    border-radius: 50px;
+    width: 3%;
+    margin-top: 10px;
+    
+    color: white;
+}
+.logo1{
+    width: 210px;
+    margin-left: 3%;
+    margin-top: 0.5%;
+
+}
+
+/* Footer styles */
+.footer {
+    position: fixed;
+    left: 0; 
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+.body1{
+    color: white;
+    padding-top: 10%;
+    font-size: 27px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    
+}
+.mainhead{
+    padding-bottom: 0;
+    color:rgb(4,116,186);
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    
+}
+.second{
+    padding-top: 5px;
+    color:white;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
+
+.background{
+    width: 85vw;
+    height: 85vh;
+    position: relative;
+    background-image: url(fewone.png);
+    border-radius: 15px;
+    background-size: contain;
+    display: block;
+    margin: auto;
+    margin-top: 1%;
+
+}
+.about{
+width: 100vw;
+height: 70vh;
+position: relative;
+display: flex;
+/* justify-content: space-between; */
+/* flex-wrap: wrap; */
+
+}
+.conti{
+    width: 60%;
+}
+.about h1{
+    display: flex;
+    margin-left: 0%;
+    padding-left: 10%;
+    padding-top: 5%;
+    margin-top: 0%;
+    color: rgb(241, 119, 32);
+    text-align: center;
+    justify-content: center;
+
+}
+.about h3{
+    display: flex;
+    margin-left: 14%;
+    padding-left: 0%;
+    padding-top: 5%;
+    margin-top: 0px;
+    color: rgb(4,116,186);
+    justify-content: center;
+    text-align: center;
+}
+.pic1{
+    float: left;
+    margin-left: 20%;
+    margin-top: 9%;
+    border-radius: 15px;
+    width: 500px;
+    height: 350px;
+
+}
+.three{
+    height: 60vh;
+    width: 100vw;
+    background-color: rgb(4,116,186);
+}
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px; /* Adjust as needed */
+    margin: 0 auto;
+    padding-top: 5%;
+    
+}
+
+.card {
+    width: 70%;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease;
+    row-gap: 2%;
+    margin-right: 2%;
+
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-content h2 {
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.card-content p {
+    color: #666;
+    transition: color 0.3s ease;
+}
+.card :hover::after{
+    background-color: blue;
+}
+
+.card:hover .card-content h2,
+.card:hover .card-content p {
+    color: rgb(241, 119, 32);
+}
+
+  
+
+.footer{
+    position: relative;
+
+}
